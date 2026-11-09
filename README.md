@@ -43,6 +43,7 @@ results/
   KEY_RESULTS.md                   generated summary of the main numbers
 figures/                           fig1-fig6 (generated from the tables)
 AUDIT_REPORT.md                    what was verified, what was wrong, what changed
+docs/supplementary.pdf             supplementary material of the paper
 ```
 
 ## The data in one paragraph
@@ -110,8 +111,19 @@ any result above.
 * Statistical unit: the run (45 = 9 datasets x 5 targets), never a horizon or
   a fold; Holm correction across comparisons.
 
-## Licence
+## Licence, confidentiality and funding
 
-Code: MIT licence (`LICENSE`). Data, stored forecasts and result tables:
-Creative Commons Attribution 4.0 International (`DATA_LICENSE`). Raw sensor
-exports and the mapping from device labels to plant assets are not released.
+Everything here is free to use. Code: MIT licence (`LICENSE`). Data, stored
+forecasts and result tables: Creative Commons Attribution 4.0 International
+(`DATA_LICENSE`); please cite the accompanying paper.
+
+The data are released with the permission of the plant. The plant's identity
+and location, the raw sensor exports, the mapping from device labels to plant
+assets, and the motor specifications and maintenance records are kept
+confidential.
+
+This work was supported by the Institute of Engineering & Management (IEM),
+Kolkata, India.
+
+The supplementary material of the paper (all result tables, model settings,
+data dictionary, disclosures) is in `docs/supplementary.pdf`.

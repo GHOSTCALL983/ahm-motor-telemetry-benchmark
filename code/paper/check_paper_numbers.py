@@ -120,6 +120,8 @@ def main(tex_path):
         ("gravity", "within 1.22\\% of $g$ in all 24 device--dataset pairs (median deviation 0.37\\%)"
          if "1.22%" in a2.loc["C3", "recomputed"] and "0.37%" in a2.loc["C3", "recomputed"] else "MISMATCH"),
         ("samples per minute", f"about {spm:.0f} samples per minute"),
+        ("best average rank", f"Averaged over both channel kinds, {s2.groupby('method').mean_rank.mean().idxmin()} had "
+                              "the best mean rank"),
     ]
     bad = 0
     for name, s in checks:
