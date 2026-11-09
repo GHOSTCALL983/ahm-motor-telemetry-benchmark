@@ -1,0 +1,7 @@
+kind,variant,units,n,median_ratio,runs_improved,p_wilcoxon
+temperature,affine,runs (mean over 13 trained models),18,1.0425444754564843,0,7.62939453125e-06
+temperature,anchored,runs (mean over 13 trained models),18,0.39860933853412656,18,7.62939453125e-06
+temperature,shrink,runs (mean over 13 trained models),18,1.0427194992495166,0,7.62939453125e-06
+vibration,affine,runs (mean over 13 trained models),27,0.9623739965872912,20,0.040983185172080994
+vibration,anchored,runs (mean over 13 trained models),27,0.708554322737463,27,1.4901161193847656e-08
+vibration,shrink,runs (mean over 13 trained models),27,0.9412111242717862,19,0.06189882755279541

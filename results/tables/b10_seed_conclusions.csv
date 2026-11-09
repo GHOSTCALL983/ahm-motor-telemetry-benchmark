@@ -1,0 +1,9 @@
+kind,seed,n_runs,trained_beating_best_naive_in_majority,models_beating,ridge_vs_tide_median_ratio,ridge_better_than_tide,ridge_vs_median_trained_ratio,ridge_better_than_median_trained,tide_best_trained_model_runs,anchored_median_ratio,anchored_runs_improved
+vibration,42,8,2,"TiDE 8/8, TimeXer 8/8, NHITS 1/8, TFT 1/8",1.0309358874065702,0,0.6009628549512933,8,8,0.7456269768487572,8
+vibration,101,8,2,"TiDE 8/8, TimeXer 8/8",1.0243513578305266,0,0.6045697434863552,8,8,0.7533119622099533,8
+vibration,202,8,2,"TiDE 8/8, TimeXer 8/8",1.0335949192202376,0,0.5950235342899192,8,8,0.7379255088206688,8
+vibration,seed-mean,8,3,"TiDE 8/8, TimeXer 8/8, TFT 6/8, DeepNPTS 4/8, NBEATSx 1/8, NHITS 1/8",1.0322666246970538,0,0.670848270036262,8,8,0.8009947860698807,8
+temperature,42,6,2,"TiDE 6/6, TimeXer 4/6",0.8402588841576201,6,0.23533805318040216,6,5,0.42180179460881023,6
+temperature,101,6,2,"TiDE 6/6, TimeXer 4/6, NBEATSx 1/6",0.8238149974840927,6,0.25778474651456756,6,6,0.4384769141437755,6
+temperature,202,6,1,"TiDE 6/6, TimeXer 3/6",0.8231212280075475,6,0.2379772346032024,6,6,0.41562335703326075,6
+temperature,seed-mean,6,2,"TiDE 6/6, TimeXer 4/6",0.8337911123212068,6,0.3026896112562611,6,5,0.47346110677026476,6

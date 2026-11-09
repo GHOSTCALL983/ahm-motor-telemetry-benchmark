@@ -1,0 +1,274 @@
+{
+  "vibration": {
+    "n_runs": 27,
+    "trained_beating_naive_in_majority": 2,
+    "beats": {
+      "TiDE": 27,
+      "TimeXer": 26,
+      "TFT": 4,
+      "NHITS": 1,
+      "BiTCN": 0,
+      "MLP": 0,
+      "KAN": 0,
+      "DilatedRNN": 0,
+      "DeepNPTS": 0,
+      "TCN": 0,
+      "NBEATSx": 0,
+      "TabNet": 0,
+      "TSMixerx": 0
+    },
+    "median_skill": {
+      "TiDE": 0.222,
+      "Ridge-Univariate": 0.2016,
+      "Ridge-Sensors": 0.1953,
+      "AR-Local": 0.1711,
+      "ChronosBolt-Small": 0.1609,
+      "Chronos2": 0.1595,
+      "TimeXer": 0.0847,
+      "Ensemble-Mean-13": 0.0581,
+      "AR-Global": 0.043,
+      "Naive-EWMA60": 0.0,
+      "Naive-MA60": -0.0487,
+      "Naive-MA15": -0.0661,
+      "DeepNPTS": -0.0783,
+      "TFT": -0.1201,
+      "Naive-Persistence": -0.174,
+      "NBEATSx": -0.1769,
+      "NHITS": -0.1996,
+      "BiTCN": -0.4212,
+      "DilatedRNN": -0.4332,
+      "TabNet": -0.4881,
+      "MLP": -0.4945,
+      "TCN": -0.5254,
+      "KAN": -0.6236,
+      "TSMixerx": -0.6711
+    },
+    "recal_shrink": {
+      "median_ratio": 0.9412,
+      "runs_improved": 19,
+      "p": 0.0618988275527954
+    },
+    "recal_affine": {
+      "median_ratio": 0.9624,
+      "runs_improved": 20,
+      "p": 0.0409831851720809
+    },
+    "recal_anchored": {
+      "median_ratio": 0.7086,
+      "runs_improved": 27,
+      "p": 1.4901161193847656e-08
+    },
+    "recal_anchored_scope": {
+      "tide_median": 1.0076,
+      "tide_improved": 7,
+      "models_beating_ridge_majority": [
+        "TiDE"
+      ],
+      "hindsight_best_vs_ridge": 0.9901,
+      "hindsight_best_better": 21
+    },
+    "overconf_range": [
+      1.113,
+      3.567
+    ]
+  },
+  "temperature": {
+    "n_runs": 18,
+    "trained_beating_naive_in_majority": 1,
+    "beats": {
+      "TiDE": 13,
+      "TimeXer": 7,
+      "DilatedRNN": 0,
+      "DeepNPTS": 0,
+      "BiTCN": 0,
+      "MLP": 0,
+      "KAN": 0,
+      "NBEATSx": 0,
+      "NHITS": 0,
+      "TFT": 0,
+      "TCN": 0,
+      "TabNet": 0,
+      "TSMixerx": 0
+    },
+    "median_skill": {
+      "Ridge-Sensors": 0.2516,
+      "Ridge-Univariate": 0.1911,
+      "ChronosBolt-Small": 0.1657,
+      "TiDE": 0.11,
+      "Chronos2": 0.0845,
+      "AR-Local": 0.0095,
+      "Naive-Persistence": 0.0,
+      "AR-Global": -0.0004,
+      "TimeXer": -0.189,
+      "NHITS": -0.3396,
+      "NBEATSx": -0.425,
+      "Ensemble-Mean-13": -0.6164,
+      "Naive-MA15": -1.1448,
+      "DeepNPTS": -1.2324,
+      "TFT": -1.4273,
+      "BiTCN": -1.7541,
+      "TCN": -2.1915,
+      "MLP": -2.7413,
+      "TSMixerx": -2.8208,
+      "TabNet": -3.3116,
+      "Naive-EWMA60": -3.479,
+      "KAN": -4.7341,
+      "Naive-MA60": -4.9029,
+      "DilatedRNN": -4.9106
+    },
+    "recal_shrink": {
+      "median_ratio": 1.0427,
+      "runs_improved": 0,
+      "p": 7.62939453125e-06
+    },
+    "recal_affine": {
+      "median_ratio": 1.0425,
+      "runs_improved": 0,
+      "p": 7.62939453125e-06
+    },
+    "recal_anchored": {
+      "median_ratio": 0.3986,
+      "runs_improved": 18,
+      "p": 7.62939453125e-06
+    },
+    "recal_anchored_scope": {
+      "tide_median": 1.0062,
+      "tide_improved": 7,
+      "models_beating_ridge_majority": [],
+      "hindsight_best_vs_ridge": 1.146,
+      "hindsight_best_better": 3
+    },
+    "overconf_range": [
+      1.008,
+      1.13
+    ]
+  },
+  "tuning": {
+    "vibration:TiDE-Tuned/Ridge-Univariate": 0.9708,
+    "vibration:TimeXer-Tuned/Ridge-Univariate": 1.0107,
+    "vibration:NHITS-Tuned/Ridge-Univariate": 1.4773,
+    "vibration:TiDE-Oracle(test-selected, reference only)/Ridge-Univariate": 0.9628,
+    "temperature:TiDE-Tuned/Ridge-Univariate": 1.1467,
+    "temperature:TimeXer-Tuned/Ridge-Univariate": 1.3176,
+    "temperature:NHITS-Tuned/Ridge-Univariate": 2.5964,
+    "temperature:TiDE-Oracle(test-selected, reference only)/Ridge-Univariate": 1.1467
+  },
+  "seeds": {
+    "vibration": [
+      {
+        "kind": "vibration",
+        "seed": "42",
+        "n_runs": 8,
+        "trained_beating_best_naive_in_majority": 2,
+        "models_beating": "TiDE 8/8, TimeXer 8/8, NHITS 1/8, TFT 1/8",
+        "ridge_vs_tide_median_ratio": 1.0309,
+        "ridge_better_than_tide": 0,
+        "ridge_vs_median_trained_ratio": 0.601,
+        "ridge_better_than_median_trained": 8,
+        "tide_best_trained_model_runs": 8,
+        "anchored_median_ratio": 0.7456,
+        "anchored_runs_improved": 8
+      },
+      {
+        "kind": "vibration",
+        "seed": "101",
+        "n_runs": 8,
+        "trained_beating_best_naive_in_majority": 2,
+        "models_beating": "TiDE 8/8, TimeXer 8/8",
+        "ridge_vs_tide_median_ratio": 1.0244,
+        "ridge_better_than_tide": 0,
+        "ridge_vs_median_trained_ratio": 0.6046,
+        "ridge_better_than_median_trained": 8,
+        "tide_best_trained_model_runs": 8,
+        "anchored_median_ratio": 0.7533,
+        "anchored_runs_improved": 8
+      },
+      {
+        "kind": "vibration",
+        "seed": "202",
+        "n_runs": 8,
+        "trained_beating_best_naive_in_majority": 2,
+        "models_beating": "TiDE 8/8, TimeXer 8/8",
+        "ridge_vs_tide_median_ratio": 1.0336,
+        "ridge_better_than_tide": 0,
+        "ridge_vs_median_trained_ratio": 0.595,
+        "ridge_better_than_median_trained": 8,
+        "tide_best_trained_model_runs": 8,
+        "anchored_median_ratio": 0.7379,
+        "anchored_runs_improved": 8
+      },
+      {
+        "kind": "vibration",
+        "seed": "seed-mean",
+        "n_runs": 8,
+        "trained_beating_best_naive_in_majority": 3,
+        "models_beating": "TiDE 8/8, TimeXer 8/8, TFT 6/8, DeepNPTS 4/8, NBEATSx 1/8, NHITS 1/8",
+        "ridge_vs_tide_median_ratio": 1.0323,
+        "ridge_better_than_tide": 0,
+        "ridge_vs_median_trained_ratio": 0.6708,
+        "ridge_better_than_median_trained": 8,
+        "tide_best_trained_model_runs": 8,
+        "anchored_median_ratio": 0.801,
+        "anchored_runs_improved": 8
+      }
+    ],
+    "temperature": [
+      {
+        "kind": "temperature",
+        "seed": "42",
+        "n_runs": 6,
+        "trained_beating_best_naive_in_majority": 2,
+        "models_beating": "TiDE 6/6, TimeXer 4/6",
+        "ridge_vs_tide_median_ratio": 0.8403,
+        "ridge_better_than_tide": 6,
+        "ridge_vs_median_trained_ratio": 0.2353,
+        "ridge_better_than_median_trained": 6,
+        "tide_best_trained_model_runs": 5,
+        "anchored_median_ratio": 0.4218,
+        "anchored_runs_improved": 6
+      },
+      {
+        "kind": "temperature",
+        "seed": "101",
+        "n_runs": 6,
+        "trained_beating_best_naive_in_majority": 2,
+        "models_beating": "TiDE 6/6, TimeXer 4/6, NBEATSx 1/6",
+        "ridge_vs_tide_median_ratio": 0.8238,
+        "ridge_better_than_tide": 6,
+        "ridge_vs_median_trained_ratio": 0.2578,
+        "ridge_better_than_median_trained": 6,
+        "tide_best_trained_model_runs": 6,
+        "anchored_median_ratio": 0.4385,
+        "anchored_runs_improved": 6
+      },
+      {
+        "kind": "temperature",
+        "seed": "202",
+        "n_runs": 6,
+        "trained_beating_best_naive_in_majority": 1,
+        "models_beating": "TiDE 6/6, TimeXer 3/6",
+        "ridge_vs_tide_median_ratio": 0.8231,
+        "ridge_better_than_tide": 6,
+        "ridge_vs_median_trained_ratio": 0.238,
+        "ridge_better_than_median_trained": 6,
+        "tide_best_trained_model_runs": 6,
+        "anchored_median_ratio": 0.4156,
+        "anchored_runs_improved": 6
+      },
+      {
+        "kind": "temperature",
+        "seed": "seed-mean",
+        "n_runs": 6,
+        "trained_beating_best_naive_in_majority": 2,
+        "models_beating": "TiDE 6/6, TimeXer 4/6",
+        "ridge_vs_tide_median_ratio": 0.8338,
+        "ridge_better_than_tide": 6,
+        "ridge_vs_median_trained_ratio": 0.3027,
+        "ridge_better_than_median_trained": 6,
+        "tide_best_trained_model_runs": 5,
+        "anchored_median_ratio": 0.4735,
+        "anchored_runs_improved": 6
+      }
+    ]
+  }
+}

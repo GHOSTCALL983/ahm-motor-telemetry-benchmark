@@ -1,0 +1,16 @@
+id,claim_in_drafts,recomputed,verdict,note
+D1,"157,707 rows",157707,PASS,
+D2,"143,787 valid forecast origins",143787,PASS,capacity of the files; the models were EVALUATED on 80 origins x 5 folds per target
+D3,"nine datasets, 3 regions x 3 iterations, 18-day windows",9 datasets,PASS,
+C1,"k_d in [1.7904, 1.8479], mean 1.8186, sd 0.0196, 3.2% spread across nine devices","9 devices: [1.7904, 1.8479], mean 1.8186, sd 0.0184, spread 3.16% | 8 retained: mean 1.8179",PASS (wording),the nine include excluded AHM-09; the release has 8 devices
+C2,raw static resultant ~1.81 units where gravity must read 1.00,median of 9 k_d = 1.8244,PASS,
+C3,median vib_dc equals g within 1.22% across 24 device-dataset pairs,"24 pairs, max deviation 1.22%, median 0.37%",PASS,
+C4,round trip 100.0000 ohm at 0 degC,100.0000 ohm,PASS,
+C5,correction grows from -8.38 degC at 22 degC to -10.74 degC at 94 degC,"correction (true - reported): -8.38 at reported 22, -10.74 at reported 94",PASS (wording),the temperatures are REPORTED (uncorrected) readings; firmware over-reports by 8-11 degC
+X1,"AHM-11: 1.0% coverage, 21,728 rows, spike 833.51 degC","1.0%, 21728 rows, max t2 833.51",PASS,
+X2,"AHM-10: 22.3% coverage, spike 835.51 degC, y axis identical in 50.98% of samples",21.7% of own span; max t2 835.51; y reads exactly 0.0 in 50.98% of samples,PASS (approx.),coverage denominator never documented; 50.98% = share of exact zeros
+X3,AHM-09 coverage 30.2% vs AHM-04 32.8%,29.5% vs 32.7% (of own span),PASS (approx.),denominator not documented
+X4,excluded devices carry temperature spikes (implied: retained ones do not),retained AHM-07 has one 821.9 degC sample at start-up (removed by envelope filter),DISCLOSE,spikes alone do not justify exclusion; coverage does
+D4,features 42-61 per dataset / Region 3: 42-43 vs 55-62 elsewhere,released canonical schema: 56 feature columns in every file; Region 3 has 16 zero-filled nb2 columns,REWORD,"the 42-61 figures describe the earlier per-region files, not this release"
+D5,regions ordered hot/mid/cool by operating temperature,R1: 56.4-64.0 degC; R2: 35.6-42.9 degC; R3: 27.3-29.7 degC,PASS,
+D6,R2_I3 variance regime: y_std 3.05 -> 12.76,"R2_I1 3.052, R2_I2 3.5526, R2_I3 12.7596",PASS,

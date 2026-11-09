@@ -1,0 +1,25 @@
+kind,comparison,value,n_runs,p,runs_method_better
+temperature,trained models beating best naive in majority of runs,1.0,18,,
+temperature,Ensemble-Mean-13 vs TiDE: median MSE ratio,1.8789181160506092,18,7.62939453125e-06,0.0
+temperature,Ensemble-Mean-13 vs median trained model: median MSE ratio,0.549642631050429,18,1.52587890625e-05,17.0
+temperature,Ridge-Univariate vs TiDE: median MSE ratio,0.888100043492677,18,7.62939453125e-06,18.0
+temperature,Ridge-Univariate vs median trained model: median MSE ratio,0.26435113845434005,18,7.62939453125e-06,18.0
+temperature,Ridge-Sensors vs TiDE: median MSE ratio,0.9102995171823932,18,0.01593017578125,13.0
+temperature,Ridge-Sensors vs median trained model: median MSE ratio,0.2773002748115719,18,7.62939453125e-06,18.0
+temperature,ChronosBolt-Small vs TiDE: median MSE ratio,0.9831308563876211,18,0.932281494140625,11.0
+temperature,ChronosBolt-Small vs median trained model: median MSE ratio,0.3073777369958967,18,7.62939453125e-06,18.0
+temperature,Chronos2 vs TiDE: median MSE ratio,0.9980018739473375,18,0.83172607421875,9.0
+temperature,Chronos2 vs median trained model: median MSE ratio,0.2829549771565857,18,7.62939453125e-06,18.0
+temperature,anchored recalibration of trained models: median MSE ratio,0.4034546714398643,18,7.62939453125e-06,18.0
+vibration,trained models beating best naive in majority of runs,2.0,27,,
+vibration,Ensemble-Mean-13 vs TiDE: median MSE ratio,1.2115456584988145,27,4.470348358154297e-08,1.0
+vibration,Ensemble-Mean-13 vs median trained model: median MSE ratio,0.7104110135822165,27,1.4901161193847656e-08,27.0
+vibration,Ridge-Univariate vs TiDE: median MSE ratio,1.0244377062922834,27,0.0008278489112854004,5.0
+vibration,Ridge-Univariate vs median trained model: median MSE ratio,0.6026228210978806,27,1.4901161193847656e-08,27.0
+vibration,Ridge-Sensors vs TiDE: median MSE ratio,1.047656242917869,27,8.372962474822998e-05,2.0
+vibration,Ridge-Sensors vs median trained model: median MSE ratio,0.61173704627952,27,1.4901161193847656e-08,27.0
+vibration,ChronosBolt-Small vs TiDE: median MSE ratio,1.0966563757917704,27,4.7460198402404785e-05,3.0
+vibration,ChronosBolt-Small vs median trained model: median MSE ratio,0.6489814954491719,27,1.4901161193847656e-08,27.0
+vibration,Chronos2 vs TiDE: median MSE ratio,1.0914559310479184,27,3.0234456062316895e-05,3.0
+vibration,Chronos2 vs median trained model: median MSE ratio,0.6518718626107155,27,1.4901161193847656e-08,27.0
+vibration,anchored recalibration of trained models: median MSE ratio,0.7459255647172376,27,1.4901161193847656e-08,27.0

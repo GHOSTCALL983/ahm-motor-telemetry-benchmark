@@ -1,0 +1,41 @@
+channel,model,shift,excl_R2_I3_target,cells,mean_mse,median_ratio_vs_in_domain
+self_x_ac,TiDE,both,False,36,0.04133791848760541,1.0012092226118159
+self_x_ac,TiDE,diagonal,False,9,0.03885469740905015,1.0
+self_x_ac,TiDE,spatial-only,False,18,0.03772952807061023,1.0007554982903275
+self_x_ac,TiDE,temporal-only,False,18,0.040072341240531585,1.0118577713652923
+self_x_ac,TimeXer,both,False,36,0.04533416514975742,1.0179254065266297
+self_x_ac,TimeXer,diagonal,False,9,0.04309337941268692,1.0
+self_x_ac,TimeXer,spatial-only,False,18,0.04639922912650052,1.0010557601828667
+self_x_ac,TimeXer,temporal-only,False,18,0.04459704753523874,1.0100118550677373
+self_x_ac,TiDE,both,True,32,0.014790045283484418,1.0012092226118159
+self_x_ac,TiDE,diagonal,True,8,0.01469685459226985,1.0
+self_x_ac,TiDE,spatial-only,True,16,0.0149294822487689,1.0084697232264679
+self_x_ac,TiDE,temporal-only,True,16,0.01483758893033205,1.0118577713652923
+self_x_ac,TimeXer,both,True,32,0.016288649835108526,1.010310600220427
+self_x_ac,TimeXer,diagonal,True,8,0.015911545677686375,1.0
+self_x_ac,TimeXer,spatial-only,True,16,0.01671629771143652,1.0010557601828667
+self_x_ac,TimeXer,temporal-only,True,16,0.016244556019553387,1.0100118550677373
+self_x_ac,TiDE,temporal (backward),False,27,0.01725566041221438,1.013752695242612
+self_x_ac,TiDE,temporal (forward),False,27,0.06457645839828054,1.0004096827179807
+self_x_ac,TimeXer,temporal (backward),False,27,0.018963159720873368,1.0306913694578301
+self_x_ac,TimeXer,temporal (forward),False,27,0.07121375883562903,1.0058629995009325
+self_temperature_one,TiDE,both,False,36,0.22891229362205998,1.0459716145459441
+self_temperature_one,TiDE,diagonal,False,9,0.2099141292187666,1.0
+self_temperature_one,TiDE,spatial-only,False,18,0.23044669881016214,1.0837368087714165
+self_temperature_one,TiDE,temporal-only,False,18,0.20925278460428046,1.0454452218435577
+self_temperature_one,TimeXer,both,False,36,0.237386329072646,1.034588144622016
+self_temperature_one,TimeXer,diagonal,False,9,0.27534396168719494,1.0
+self_temperature_one,TimeXer,spatial-only,False,18,0.25253143844317455,1.1113690202434259
+self_temperature_one,TimeXer,temporal-only,False,18,0.2526751886584383,1.055480673951906
+self_temperature_one,TiDE,both,True,32,0.24757447166700494,1.0459716145459441
+self_temperature_one,TiDE,diagonal,True,8,0.22621597711118982,1.0
+self_temperature_one,TiDE,spatial-only,True,16,0.2491306422750152,1.0837368087714165
+self_temperature_one,TiDE,temporal-only,True,16,0.22510853403341924,1.0454452218435577
+self_temperature_one,TimeXer,both,True,32,0.2567513011602695,1.0835789579046533
+self_temperature_one,TimeXer,diagonal,True,8,0.29929720747296595,1.0
+self_temperature_one,TimeXer,spatial-only,True,16,0.2707762735287923,1.083334795557937
+self_temperature_one,TimeXer,temporal-only,True,16,0.27412898490370624,1.087627663349545
+self_temperature_one,TiDE,temporal (backward),False,27,0.182695043242453,1.0869111183673854
+self_temperature_one,TiDE,temporal (forward),False,27,0.2620232046564806,1.021182393527713
+self_temperature_one,TimeXer,temporal (backward),False,27,0.20664969092029428,1.1144821745284725
+self_temperature_one,TimeXer,temporal (forward),False,27,0.27831554028219263,0.9912799371841715

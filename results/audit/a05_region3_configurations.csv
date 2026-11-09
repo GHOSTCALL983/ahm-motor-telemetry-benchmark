@@ -1,0 +1,5 @@
+configuration,usable_minutes,loss_vs_retained_pair_pct
+AHM-08+AHM-07+AHM-09,34248,46.0
+AHM-08+AHM-07,63461,0.0
+AHM-07+AHM-09,34280,46.0
+AHM-08+AHM-09,34322,45.9

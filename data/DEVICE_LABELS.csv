@@ -1,0 +1,12 @@
+label,region,zone,role_in_files,status,reason
+AHM-01,R1,Hot,self (reference sensor),retained,
+AHM-02,R1,Hot,nb1,retained,
+AHM-03,R1,Hot,nb2,retained,
+AHM-04,R2,Mid,nb1,retained,
+AHM-05,R2,Mid,nb2,retained,
+AHM-06,R2,Mid,self (reference sensor),retained,
+AHM-07,R3,Cool,nb1,retained,one start-up temperature_two sample of 821.9 degC removed by the -20..250 degC envelope
+AHM-08,R3,Cool,self (reference sensor),retained,
+AHM-09,R3,Cool,-,excluded,not faulty; uptime misaligned with AHM-07/AHM-08 so three-way overlap would roughly halve usable minutes
+AHM-10,-,-,-,excluded,starts after the windows open; 21.7% coverage of its own span; y axis reads exactly 0.0 in 50.98% of samples (x and z also mostly constant); temperature spike 835.51 degC
+AHM-11,-,-,-,excluded,1.0% coverage (21728 rows); temperature spike 833.51 degC

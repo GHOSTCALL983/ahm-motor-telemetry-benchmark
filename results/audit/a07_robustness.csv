@@ -1,0 +1,85 @@
+kind,claim,variant,value,runs_better,n_runs,p_wilcoxon
+vibration,trained models beating best naive in a majority of runs,as reported,2.0,,,
+vibration,Ridge-Univariate vs TiDE: median MSE ratio,as reported,1.0244,6.0,27.0,0.0012526363134384155
+vibration,Ridge-Univariate vs median trained model: median MSE ratio,as reported,0.5797,27.0,27.0,1.4901161193847656e-08
+vibration,Ridge-Sensors vs TiDE: median MSE ratio,as reported,1.0477,2.0,27.0,0.00016239285469055176
+vibration,Ridge-Sensors vs median trained model: median MSE ratio,as reported,0.6,27.0,27.0,1.4901161193847656e-08
+vibration,AR-Global vs TiDE: median MSE ratio,as reported,1.2514,1.0,27.0,2.9802322387695312e-08
+vibration,AR-Global vs median trained model: median MSE ratio,as reported,0.6979,27.0,27.0,1.4901161193847656e-08
+vibration,AR-Local vs TiDE: median MSE ratio,as reported,1.0684,1.0,27.0,1.8790364265441895e-05
+vibration,AR-Local vs median trained model: median MSE ratio,as reported,0.6218,27.0,27.0,1.4901161193847656e-08
+vibration,ChronosBolt-Small vs TiDE: median MSE ratio,as reported,1.0938,3.0,27.0,6.331503391265869e-05
+vibration,ChronosBolt-Small vs median trained model: median MSE ratio,as reported,0.6244,27.0,27.0,1.4901161193847656e-08
+vibration,Chronos2 vs TiDE: median MSE ratio,as reported,1.093,4.0,27.0,5.488097667694092e-05
+vibration,Chronos2 vs median trained model: median MSE ratio,as reported,0.616,27.0,27.0,1.4901161193847656e-08
+vibration,Ensemble-Mean-13 vs TiDE: median MSE ratio,as reported,1.2403,0.0,27.0,1.4901161193847656e-08
+vibration,Ensemble-Mean-13 vs median trained model: median MSE ratio,as reported,0.7041,27.0,27.0,1.4901161193847656e-08
+vibration,Ensemble-Median-13 vs TiDE: median MSE ratio,as reported,1.243,0.0,27.0,1.4901161193847656e-08
+vibration,Ensemble-Median-13 vs median trained model: median MSE ratio,as reported,0.7079,27.0,27.0,1.4901161193847656e-08
+vibration,best naive (reference),as reported,0.0044,,,
+vibration,trained models beating best naive in a majority of runs,diverged cells (>10x persistence) removed,2.0,,,
+vibration,Ridge-Univariate vs TiDE: median MSE ratio,diverged cells (>10x persistence) removed,1.0244,6.0,27.0,0.0012526363134384155
+vibration,Ridge-Univariate vs median trained model: median MSE ratio,diverged cells (>10x persistence) removed,0.5797,27.0,27.0,1.4901161193847656e-08
+vibration,Ridge-Sensors vs TiDE: median MSE ratio,diverged cells (>10x persistence) removed,1.0477,2.0,27.0,0.00016239285469055176
+vibration,Ridge-Sensors vs median trained model: median MSE ratio,diverged cells (>10x persistence) removed,0.6,27.0,27.0,1.4901161193847656e-08
+vibration,AR-Global vs TiDE: median MSE ratio,diverged cells (>10x persistence) removed,1.2514,1.0,27.0,2.9802322387695312e-08
+vibration,AR-Global vs median trained model: median MSE ratio,diverged cells (>10x persistence) removed,0.6979,27.0,27.0,1.4901161193847656e-08
+vibration,AR-Local vs TiDE: median MSE ratio,diverged cells (>10x persistence) removed,1.0684,1.0,27.0,1.8790364265441895e-05
+vibration,AR-Local vs median trained model: median MSE ratio,diverged cells (>10x persistence) removed,0.6218,27.0,27.0,1.4901161193847656e-08
+vibration,ChronosBolt-Small vs TiDE: median MSE ratio,diverged cells (>10x persistence) removed,1.0938,3.0,27.0,6.331503391265869e-05
+vibration,ChronosBolt-Small vs median trained model: median MSE ratio,diverged cells (>10x persistence) removed,0.6244,27.0,27.0,1.4901161193847656e-08
+vibration,Chronos2 vs TiDE: median MSE ratio,diverged cells (>10x persistence) removed,1.093,4.0,27.0,5.488097667694092e-05
+vibration,Chronos2 vs median trained model: median MSE ratio,diverged cells (>10x persistence) removed,0.616,27.0,27.0,1.4901161193847656e-08
+vibration,Ensemble-Mean-13 vs TiDE: median MSE ratio,diverged cells (>10x persistence) removed,1.2403,0.0,27.0,1.4901161193847656e-08
+vibration,Ensemble-Mean-13 vs median trained model: median MSE ratio,diverged cells (>10x persistence) removed,0.7041,27.0,27.0,1.4901161193847656e-08
+vibration,Ensemble-Median-13 vs TiDE: median MSE ratio,diverged cells (>10x persistence) removed,1.243,0.0,27.0,1.4901161193847656e-08
+vibration,Ensemble-Median-13 vs median trained model: median MSE ratio,diverged cells (>10x persistence) removed,0.7079,27.0,27.0,1.4901161193847656e-08
+vibration,best naive (reference),diverged cells (>10x persistence) removed,0.0044,,,
+vibration,recalibration 'shrink': median MSE ratio vs raw,as reported,0.9412,19.0,27.0,0.06189882755279541
+vibration,recalibration 'affine': median MSE ratio vs raw,as reported,0.9624,20.0,27.0,0.040983185172080994
+vibration,recalibration 'anchored': median MSE ratio vs raw,as reported,0.7086,27.0,27.0,1.4901161193847656e-08
+vibration,recalibration 'shrink': median MSE ratio vs raw,diverged cells (>10x persistence) removed,0.9412,19.0,27.0,0.07314017415046692
+vibration,recalibration 'affine': median MSE ratio vs raw,diverged cells (>10x persistence) removed,0.9624,20.0,27.0,0.04910190403461456
+vibration,recalibration 'anchored': median MSE ratio vs raw,diverged cells (>10x persistence) removed,0.7086,27.0,27.0,1.4901161193847656e-08
+temperature,trained models beating best naive in a majority of runs,as reported,1.0,,,
+temperature,Ridge-Univariate vs TiDE: median MSE ratio,as reported,0.8721,18.0,18.0,7.62939453125e-06
+temperature,Ridge-Univariate vs median trained model: median MSE ratio,as reported,0.2623,18.0,18.0,7.62939453125e-06
+temperature,Ridge-Sensors vs TiDE: median MSE ratio,as reported,0.91,13.0,18.0,0.01593017578125
+temperature,Ridge-Sensors vs median trained model: median MSE ratio,as reported,0.2752,18.0,18.0,7.62939453125e-06
+temperature,AR-Global vs TiDE: median MSE ratio,as reported,1.1232,5.0,18.0,0.010406494140625
+temperature,AR-Global vs median trained model: median MSE ratio,as reported,0.3424,18.0,18.0,7.62939453125e-06
+temperature,AR-Local vs TiDE: median MSE ratio,as reported,1.0955,5.0,18.0,0.00896453857421875
+temperature,AR-Local vs median trained model: median MSE ratio,as reported,0.3297,18.0,18.0,7.62939453125e-06
+temperature,ChronosBolt-Small vs TiDE: median MSE ratio,as reported,0.9726,11.0,18.0,0.7987060546875
+temperature,ChronosBolt-Small vs median trained model: median MSE ratio,as reported,0.299,18.0,18.0,7.62939453125e-06
+temperature,Chronos2 vs TiDE: median MSE ratio,as reported,0.954,11.0,18.0,0.3692169189453125
+temperature,Chronos2 vs median trained model: median MSE ratio,as reported,0.281,18.0,18.0,7.62939453125e-06
+temperature,Ensemble-Mean-13 vs TiDE: median MSE ratio,as reported,1.7904,0.0,18.0,7.62939453125e-06
+temperature,Ensemble-Mean-13 vs median trained model: median MSE ratio,as reported,0.5488,17.0,18.0,1.52587890625e-05
+temperature,Ensemble-Median-13 vs TiDE: median MSE ratio,as reported,1.5526,0.0,18.0,7.62939453125e-06
+temperature,Ensemble-Median-13 vs median trained model: median MSE ratio,as reported,0.4812,18.0,18.0,7.62939453125e-06
+temperature,best naive (reference),as reported,0.3303,,,
+temperature,trained models beating best naive in a majority of runs,diverged cells (>10x persistence) removed,1.0,,,
+temperature,Ridge-Univariate vs TiDE: median MSE ratio,diverged cells (>10x persistence) removed,0.8721,18.0,18.0,7.62939453125e-06
+temperature,Ridge-Univariate vs median trained model: median MSE ratio,diverged cells (>10x persistence) removed,0.2654,18.0,18.0,7.62939453125e-06
+temperature,Ridge-Sensors vs TiDE: median MSE ratio,diverged cells (>10x persistence) removed,0.91,13.0,18.0,0.01593017578125
+temperature,Ridge-Sensors vs median trained model: median MSE ratio,diverged cells (>10x persistence) removed,0.2752,18.0,18.0,7.62939453125e-06
+temperature,AR-Global vs TiDE: median MSE ratio,diverged cells (>10x persistence) removed,1.1232,5.0,18.0,0.010406494140625
+temperature,AR-Global vs median trained model: median MSE ratio,diverged cells (>10x persistence) removed,0.3449,18.0,18.0,7.62939453125e-06
+temperature,AR-Local vs TiDE: median MSE ratio,diverged cells (>10x persistence) removed,1.0955,5.0,18.0,0.00896453857421875
+temperature,AR-Local vs median trained model: median MSE ratio,diverged cells (>10x persistence) removed,0.342,18.0,18.0,7.62939453125e-06
+temperature,ChronosBolt-Small vs TiDE: median MSE ratio,diverged cells (>10x persistence) removed,0.9726,11.0,18.0,0.7987060546875
+temperature,ChronosBolt-Small vs median trained model: median MSE ratio,diverged cells (>10x persistence) removed,0.299,18.0,18.0,7.62939453125e-06
+temperature,Chronos2 vs TiDE: median MSE ratio,diverged cells (>10x persistence) removed,0.954,11.0,18.0,0.3692169189453125
+temperature,Chronos2 vs median trained model: median MSE ratio,diverged cells (>10x persistence) removed,0.2823,18.0,18.0,7.62939453125e-06
+temperature,Ensemble-Mean-13 vs TiDE: median MSE ratio,diverged cells (>10x persistence) removed,1.7904,0.0,18.0,7.62939453125e-06
+temperature,Ensemble-Mean-13 vs median trained model: median MSE ratio,diverged cells (>10x persistence) removed,0.566,17.0,18.0,3.814697265625e-05
+temperature,Ensemble-Median-13 vs TiDE: median MSE ratio,diverged cells (>10x persistence) removed,1.5526,0.0,18.0,7.62939453125e-06
+temperature,Ensemble-Median-13 vs median trained model: median MSE ratio,diverged cells (>10x persistence) removed,0.482,18.0,18.0,7.62939453125e-06
+temperature,best naive (reference),diverged cells (>10x persistence) removed,0.3303,,,
+temperature,recalibration 'shrink': median MSE ratio vs raw,as reported,1.0427,0.0,18.0,7.62939453125e-06
+temperature,recalibration 'affine': median MSE ratio vs raw,as reported,1.0425,0.0,18.0,7.62939453125e-06
+temperature,recalibration 'anchored': median MSE ratio vs raw,as reported,0.3986,18.0,18.0,7.62939453125e-06
+temperature,recalibration 'shrink': median MSE ratio vs raw,diverged cells (>10x persistence) removed,1.0356,1.0,18.0,1.52587890625e-05
+temperature,recalibration 'affine': median MSE ratio vs raw,diverged cells (>10x persistence) removed,1.0405,0.0,18.0,7.62939453125e-06
+temperature,recalibration 'anchored': median MSE ratio vs raw,diverged cells (>10x persistence) removed,0.4492,18.0,18.0,7.62939453125e-06

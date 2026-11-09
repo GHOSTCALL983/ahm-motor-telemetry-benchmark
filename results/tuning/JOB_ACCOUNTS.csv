@@ -1,0 +1,19 @@
+run,account,note
+R1_I1__self_x_ac,A (first author),Kaggle GPU Tesla T4 (torch 2.11.0+cu130); account's own private md5-identical copy of data/
+R1_I1__self_temperature_one,A (first author),Kaggle GPU Tesla T4 (torch 2.11.0+cu130); account's own private md5-identical copy of data/
+R2_I1__self_x_ac,A (first author),Kaggle GPU Tesla T4 (torch 2.11.0+cu130); account's own private md5-identical copy of data/
+R2_I1__self_temperature_one,A (first author),Kaggle GPU Tesla T4 (torch 2.11.0+cu130); account's own private md5-identical copy of data/
+R3_I1__self_x_ac,A (first author),Kaggle GPU Tesla T4 (torch 2.11.0+cu130); account's own private md5-identical copy of data/
+R3_I1__self_temperature_one,A (first author),Kaggle GPU Tesla T4 (torch 2.11.0+cu130); account's own private md5-identical copy of data/
+R1_I2__self_x_ac,A (first author),Kaggle GPU Tesla T4 (torch 2.11.0+cu130); account's own private md5-identical copy of data/
+R1_I2__self_temperature_one,A (first author),Kaggle GPU Tesla T4 (torch 2.11.0+cu130); account's own private md5-identical copy of data/
+R2_I2__self_x_ac,C (co-author),Kaggle GPU Tesla T4 (torch 2.11.0+cu130); account's own private md5-identical copy of data/
+R2_I2__self_temperature_one,C (co-author),Kaggle GPU Tesla T4 (torch 2.11.0+cu130); account's own private md5-identical copy of data/
+R3_I2__self_x_ac,C (co-author),Kaggle GPU Tesla T4 (torch 2.11.0+cu130); account's own private md5-identical copy of data/
+R3_I2__self_temperature_one,C (co-author),Kaggle GPU Tesla T4 (torch 2.11.0+cu130); account's own private md5-identical copy of data/
+R1_I3__self_x_ac,B (co-author),Kaggle GPU Tesla T4 (torch 2.11.0+cu130); account's own private md5-identical copy of data/
+R1_I3__self_temperature_one,B (co-author),Kaggle GPU Tesla T4 (torch 2.11.0+cu130); account's own private md5-identical copy of data/
+R2_I3__self_x_ac,B (co-author),Kaggle GPU Tesla T4 (torch 2.11.0+cu130); account's own private md5-identical copy of data/
+R2_I3__self_temperature_one,B (co-author),Kaggle GPU Tesla T4 (torch 2.11.0+cu130); account's own private md5-identical copy of data/
+R3_I3__self_x_ac,A (first author),Kaggle GPU Tesla T4 (torch 2.11.0+cu130); account's own private md5-identical copy of data/
+R3_I3__self_temperature_one,A (first author),Kaggle GPU Tesla T4 (torch 2.11.0+cu130); account's own private md5-identical copy of data/

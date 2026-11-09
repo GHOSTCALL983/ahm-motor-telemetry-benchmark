@@ -1,0 +1,7 @@
+kind,variant,runs,best_trained_model_unchanged
+temperature,affine,18,17
+temperature,anchored,18,11
+temperature,shrink,18,18
+vibration,affine,27,27
+vibration,anchored,27,25
+vibration,shrink,27,27

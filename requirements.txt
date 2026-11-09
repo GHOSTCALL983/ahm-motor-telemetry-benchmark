@@ -1,0 +1,17 @@
+# Analysis environment (CPU), as used for every result in results/ and figures/
+python==3.14.3
+numpy==2.4.4
+pandas==2.3.3
+scipy==1.18.0
+matplotlib==3.11.1
+pyarrow==25.0.0
+torch==2.11.0          # CPU build; only needed for the pretrained (Chronos) forecasts
+transformers==5.18.0
+chronos-forecasting==2.3.2   # models amazon/chronos-bolt-small and amazon/chronos-2 (Hugging Face)
+
+# Neural training (code/training/train_forecasters.py) ran on Kaggle, Tesla P100:
+#   torch==2.7.1 (cu126 build), neuralforecast and pytorch-tabnet = latest pip release
+#   at run time (July 2026). Their exact versions were not logged. The 28 extra-seed
+#   runs used the same environment (Tesla P100, torch 2.7.1+cu126).
+# Hyperparameter check (code/training/tune_forecasters.py) ran on Kaggle, Tesla T4:
+#   torch 2.11.0+cu130 (November 2026); neuralforecast version not logged.
