@@ -50,6 +50,8 @@ def main(tex_path):
     rv, rt = test("vibration", "Ridge-Univariate", "TiDE"), test("temperature", "Ridge-Univariate", "TiDE")
     oc = b4[b4.method.isin(TRAINED_MODELS)]
     ocv = oc[oc.kind == "vibration"].set_index("method")
+    ocv_all = b4[b4.kind == "vibration"].set_index("method")
+    kept = pd.read_csv(TABLES / "b06_origins_kept.csv")
     weak = ocv[ocv.median_overconf >= 1.8]
     temp_r = b4[b4.kind == "temperature"].set_index("method").median_r
     trained_r = temp_r[[m for m in TRAINED_MODELS if m != "TiDE"]]
@@ -122,6 +124,15 @@ def main(tex_path):
         ("samples per minute", f"about {spm:.0f} samples per minute"),
         ("best average rank", f"Averaged over both channel kinds, {s2.groupby('method').mean_rank.mean().idxmin()} had "
                               "the best mean rank"),
+        ("best rank temperature", f"Best mean rank, temperature (15 min)? & "
+                                  f"{s2[s2.kind == 'temperature'].set_index('method').mean_rank.idxmin()};"),
+        ("best rank vibration", f"Best mean rank, vibration (3 min)? & "
+                                f"{s2[s2.kind == 'vibration'].set_index('method').mean_rank.idxmin()};"),
+        ("persistence overconfidence", f"($\\rho/r={ocv_all.loc['Naive-Persistence'].median_overconf:.2f}$)"),
+        ("anomaly origins kept", f"keeps {int(kept.kept.sum()):,} of {int(kept.origins.sum()):,} origins".replace(",", "{,}")),
+        ("Chronos vs TiDE temperature", f"(11 wins each, $p\\ge{min(test('temperature', 'Chronos2', 'TiDE').p_wilcoxon, test('temperature', 'ChronosBolt-Small', 'TiDE').p_wilcoxon):.2f}$)"
+         if test('temperature', 'Chronos2', 'TiDE').runs_method_better == 11 == test('temperature', 'ChronosBolt-Small', 'TiDE').runs_method_better else "MISMATCH"),
+        ("2160 trainings", f"{18 * 3 * 8 * 5:,}".replace(",", "{,}") + " tuning trainings"),
     ]
     bad = 0
     for name, s in checks:

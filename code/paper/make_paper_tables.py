@@ -13,6 +13,7 @@ import json
 import sys
 from pathlib import Path
 
+import numpy as np
 import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
@@ -66,6 +67,11 @@ def longtab(cols, header, rows, caption, label):
            r"\toprule"] + header + [r"\midrule", r"\endhead", r"\bottomrule", r"\endfoot"]
     out += rows + [r"\end{longtable}}"]
     return "\n".join(out) + "\n"
+
+
+def gmed(x):
+    """Median ratio as defined in the paper: exp(median of log ratios)."""
+    return float(np.exp(np.log(pd.Series(x)).median()))
 
 
 def nice(m):
@@ -165,6 +171,29 @@ def t_recal(out):
            r"\cmidrule(lr){2-4}\cmidrule(lr){5-7}",
            r"Variant & Ratio & Impr. & $p$ & Ratio & Impr. & $p$ \\"]
     write(out / "tab_recal.tex", tabular("@{}lrrrrrr@{}", hdr, rows))
+
+
+def t_models(out):
+    """Per trained model: overconfidence, conditional-bias share and anchored-recalibration ratio."""
+    dc = pd.read_csv(TABLES / "b04_overconfidence_by_model.csv").set_index(["kind", "method"])
+    rr = pd.read_csv(TABLES / "b03_recal_run_level.csv")
+    rr = rr[(rr.variant == "anchored") & (rr.h == rr.kind.map(OP_H))]
+    an = rr.groupby(["kind", "method"]).ratio_vs_raw.apply(gmed)
+    order = dc.loc["vibration"].loc[TRAINED_MODELS].sort_values("median_overconf").index
+    rows = []
+    for m in list(order) + ["Ridge-Univariate", "Naive-Persistence"]:
+        if m == "Ridge-Univariate":
+            rows.append(r"\midrule")
+        c = []
+        for kind in ("vibration", "temperature"):
+            d = dc.loc[(kind, m)]
+            a = f"{an[(kind, m)]:.2f}" if (kind, m) in an.index else "--"
+            c.append(f"{d.median_overconf:.2f} & {d.median_r:.2f} & {d.median_cond_bias_pct:.1f} & {a}")
+        rows.append(f"{tex(nice(m))} & " + " & ".join(c) + r" \\")
+    hdr = [r" & \multicolumn{4}{c}{Vibration ($h=3$)} & \multicolumn{4}{c}{Temperature ($h=15$)} \\",
+           r"\cmidrule(lr){2-5}\cmidrule(lr){6-9}",
+           r"Model & $\rho/r$ & $r$ & CB\% & Anch. & $\rho/r$ & $r$ & CB\% & Anch. \\"]
+    write(out / "tab_models.tex", tabular("@{}lrrrrrrrr@{}", hdr, rows))
 
 
 def t_robust(out):
@@ -334,7 +363,7 @@ def s_tables(out):
                          "stab:recal_family"))
     rr = pd.read_csv(TABLES / "b03_recal_run_level.csv")
     rr = rr[(rr.variant == "anchored") & (rr.h == rr.kind.map(OP_H)) & (rr.method.isin(TRAINED_MODELS))]
-    pm = rr.groupby(["method", "kind"]).ratio_vs_raw.agg(["median", lambda x: int((x < 1).sum())]).unstack()
+    pm = rr.groupby(["method", "kind"]).ratio_vs_raw.agg([("median", gmed), ("<lambda_0>", lambda x: int((x < 1).sum()))]).unstack()
     rows = [f"{m} & {pm.loc[m, ('median', 'vibration')]:.3f} & {int(pm.loc[m, ('<lambda_0>', 'vibration')])}/27 & "
             f"{pm.loc[m, ('median', 'temperature')]:.3f} & {int(pm.loc[m, ('<lambda_0>', 'temperature')])}/18 \\\\"
             for m in pm.sort_values(("median", "vibration")).index]
@@ -535,7 +564,7 @@ def main():
     ap.add_argument("--supp", default=str(root / "paper_tables" / "supp"))
     a = ap.parse_args()
     m, s = Path(a.main), Path(a.supp)
-    for fn in (t_data, t_accuracy, t_pairs, t_recal, t_robust, t_tuning):
+    for fn in (t_data, t_accuracy, t_pairs, t_recal, t_models, t_robust, t_tuning):
         fn(m)
     s_tables(s)
     s_static(s)
